@@ -14,7 +14,7 @@
           "uploadType": "image",
           "containerPort": 2368,
           "imageInfo": {
-            "imageUrl": "ccr.ccs.tencentyun.com/tcb_public/ghost:3.38.3"
+            "imageUrl": "registry.hub.docker.com/library/ghost:4-alpine"
           },
           "envVariables": {
             "database__client": "mysql",
