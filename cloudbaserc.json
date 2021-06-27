@@ -17,8 +17,6 @@
             "imageUrl": "registry.hub.docker.com/library/ghost:4-alpine"
           },
           "envVariables": {
-            "database__client": "mysql",
-            "database__connection__database": "ghost",
             "logging__path": "/tmp",
             "url": "{{env.url}}"
           },
@@ -33,16 +31,6 @@
         {
           "type": "CFS",
           "name": "ghost-cfs"
-        },
-        {
-          "type": "CynosDB",
-          "name": "ghost",
-          "envMap": {
-            "IP": "database__connection__host",
-            "PORT": "database__connection__port",
-            "USERNAME": "database__connection__user",
-            "PASSWORD": "database__connection__password"
-          }
         }
       ],
       "environment": {
